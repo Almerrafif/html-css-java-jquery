@@ -1,0 +1,480 @@
+:root {
+  --primary: rgb(128, 128, 128);
+  --bg: #fafafa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: popins, sans-serif;
+  background-color: #e5d2a7;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #825534;
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+.navbar-logo {
+  width: 50px;
+}
+.navbar .navbar-nav a {
+  color: white;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+  transition: 0.2s linear;
+}
+.navbar .navbar-extra a {
+  color: white;
+  margin: 0 0.5rem;
+  margin-left: 20px;
+}
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+#hamburger-menu {
+  display: none;
+}
+.pading {
+  width: 100%;
+  height: 100px;
+}
+.logo {
+  width: 50px;
+}
+.foto-cv {
+  width: 308px;
+  height: 337px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 2rem 2rem;
+}
+.profil {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 2rem;
+  align-items: center;
+}
+.name {
+  font-weight: 500;
+  font-style: italic;
+}
+.about {
+  padding: 0rem 4rem;
+}
+.subtitle {
+  padding-bottom: 51px;
+  font-weight: 500;
+  font-style: italic;
+}
+.about p {
+  font-style: italic;
+}
+.about-content {
+  text-align: center;
+}
+.Contact {
+  padding-left: 40px;
+  padding-bottom: 76px;
+}
+.Education {
+  padding-left: 40px;
+}
+.Skill {
+  padding-top: 241px;
+  padding-left: 40px;
+}
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+li {
+  padding-top: 27px;
+}
+li img {
+  padding-right: 25px;
+  max-width: 45px;
+  max-height: 45px;
+}
+.Skill img {
+  width: 100px;
+}
+footer {
+  background-color: #825534;
+}
+.footer-text {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 25px 49px;
+  font-weight: 500;
+}
+.copyright {
+  text-align: center;
+}
+.tentang {
+  padding-right: 152px;
+}
+.Client-testimoni {
+  margin-bottom: 308px;
+  margin-top: 88px;
+  padding-left: 75px;
+}
+.Client-testimoni h2 {
+  margin-bottom: 74px;
+  font-style: italic;
+  font-weight: 600;
+}
+.Client-testimoni-container {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  background-color: white;
+  width: 544px;
+  height: 440px;
+  border-radius: 24px;
+  margin-right: 88px;
+  padding: 20px 30px 0 20px;
+  font-style: italic;
+  font-weight: 500;
+}
+.Client-testimoni img {
+  width: 105px;
+  height: 100px;
+  border-radius: 50%;
+}
+.deskripsi {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.deskripsi h2 {
+  font-style: italic;
+  font-weight: 500;
+  padding-left: 50px;
+}
+.pembatas {
+  text-align: center;
+}
+.Education li {
+  font-style: italic;
+}
+.experience img {
+  width: 171px;
+  height: 127px;
+}
+.hobbies {
+  margin-top: 59px;
+}
+.hobbies img {
+  padding: 0px 20px;
+}
+.right-col {
+  padding-left: 100px;
+  padding-top: 200px;
+  padding-right: 40px;
+}
+.hire-me {
+  padding-top: 30px;
+}
+.hire-me p {
+  font-style: italic;
+}
+.card img {
+  float: left;
+  padding: 30px;
+}
+.pembatas {
+  margin-left: 200px;
+}
+.contact .formulir form .input-box .input-field input,
+.contact .formulir form .textarea-field textarea {
+  width: 600px;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: black;
+  background: #fffbe9;
+  border-radius: 0.6rem;
+  border: 0.2rem solid var(--main-color);
+}
+
+.contact form {
+  max-width: 70rem;
+}
+
+.contact form .input-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field {
+  position: relative;
+  margin: 0.8rem 0;
+}
+
+.contact form .textarea-field {
+  margin-top: 1rem;
+}
+
+.contact form .textarea-field textarea {
+  resize: none;
+}
+
+.contact form .submit-btn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 34.5rem;
+  height: 5rem;
+}
+
+.contact form .submit-btn button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 70%;
+  background: #ad8b73;
+  border-radius: 10px;
+  border: 0.8rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: white;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+  margin-top: 20px;
+}
+
+.contact form .submit-btn button:hover {
+  background-color: #e3caa5;
+  color: #ad8b73;
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .profil {
+    display: inline;
+  }
+  .content-image img {
+    width: 200px;
+    height: 215px;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgb(255, 248, 234);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.5s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #060606;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+  .about {
+    padding: 5rem;
+  }
+  .deskripsi {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .Contact li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact2 {
+    margin-left: -8rem;
+  }
+  .Education {
+    margin-left: -8rem;
+  }
+  .Education h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Education ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Skill {
+    margin-top: -13rem;
+  }
+  .Skill h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+  }
+  .imag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .imag img {
+    padding-right: 3rem;
+  }
+  .garis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 2px;
+    background-color: #060606;
+  }
+  .garis2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .Contact h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pembatas {
+    display: none;
+  }
+  .exp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+  }
+  .ul2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .obp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+  }
+  .hire2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+    margin-bottom: 5rem;
+  }
+  .hire-me {
+    margin-top: 8rem;
+  }
+  .hb2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  .gb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+  }
+  .Client-testimoni h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+  }
+  .card {
+    font-size: 90%;
+  }
+  .footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8rem;
+    padding: 2rem;
+  }
+  .copyright {
+    padding: 2rem;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+    margin-top: -8rem;
+  }
+}
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
